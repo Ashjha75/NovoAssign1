@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background: #f3f3f3;
+  padding: 5px 10px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.contains {
+  padding: 0 12rem;
+}
+.container {
+  background: #f3f3f3;
+  padding: 1.5rem 5rem;
+  display: flex;
+  width: 40%;
+  margin-top: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .row1 {
+  display: flex;
+  margin: 0 1rem;
+  width: 60%;
+}
+.container .row1 img {
+  width: 30px;
+  cursor: pointer;
+  object-fit: contain;
+}
+.container .row1 span {
+  color: #22a5c0;
+  font-size: 19px;
+  font-weight: 500;
+  flex-basis: 90%;
+  display: flex;
+  justify-content: center;
+}
+.container .row2 {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .row2 span {
+  color: #636565;
+  font-size: 17px;
+}
+.container .row2 .DivContain {
+  background: #fff;
+  /* padding: 1rem 0.2rem; */
+  margin: 0.5rem;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px 0px rgb(0 0 0 / 0.1), 0 5px 5px -1px rgb(0 0 0 / 0.1);
+  width: 79%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+}
+.container .row2 .DivContain #s1 {
+  color: rgb(99, 117, 117);
+}
+
+.container .row2 .DivContain:hover {
+  color: #22a5c0;
+  border: 2px solid #22a5c0;
+}
+.container .row2 .DivContain:hover > #s1 {
+  color: #666dbb;
+}
+.round {
+  position: relative;
+}
+.round #s1 {
+  width: 82%;
+  margin-left: 1rem;
+}
+.round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 26px;
+  right: 12px;
+  position: absolute;
+  bottom: 35px;
+  width: 26px;
+}
+
+.round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  right: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+  background-color: #666dbb;
+  border-color: #7166bb;
+}
+
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+.container .row3 {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-top: 1.5rem;
+  padding: 10px;
+}
+.container .row3 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .row3 span .btn {
+  padding: 0.7rem 0;
+}
+.container .row3 span .btn1 {
+  margin-right: 1rem;
+}
+.container .row3 span .btn1,
+.btn2 {
+  width: 50%;
+}
+.container .row3 span .btn3 {
+  width: 100%;
+  margin-top: 1rem;
+}
+.row4 {
+  width: 32%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  object-fit: contain;
+  background: #fff;
+  padding: 1.2rem 0.3rem;
+}
+.row4 span {
+  text-align: center;
+  padding-right: 2px;
+  color: #7f7c7c;
+  width: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row4 #s1 {
+  border-right: 1px solid gray;
+}
+.row4 span img {
+  width: 32px;
+}
+
+@media only screen and (max-width: 900px) {
+  .contains {
+    padding: 0 0rem;
+  }
+  .container {
+    padding: 1.5rem 1rem;
+    margin-top: 0rem;
+    width: 90%;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    object-fit: contain;
+  }
+  nav img {
+    width: 100px;
+  }
+  nav .Arrow {
+    width: 20px;
+  }
+  .container .row1 {
+    margin: 0 0.3rem;
+    width: 95%;
+  }
+  .container .row1 img {
+    width: 30px;
+    cursor: pointer;
+  }
+  .container .row1 span {
+    color: #22a5c0;
+    font-size: 19px;
+    font-weight: 500;
+    flex-basis: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .container .row2 {
+    width: 97%;
+  }
+  .container .row2 span {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  .container .row2 .DivContain {
+    padding: 0.3rem;
+    margin: 0.5rem 0.35rem;
+    width: 90%;
+    height: 6rem;
+  }
+
+  .container .row2 .DivContain label {
+    display: block;
+    flex-basis: 85%;
+    line-height: 17px;
+    font-size: 17px;
+    text-align: center;
+    padding-left: 15px;
+    text-indent: -15px;
+  }
+
+  .container .row3 {
+    width: 90%;
+  }
+
+  .row4 {
+    width: 100%;
+    background: #fff;
+    margin-bottom: -3rem;
+    border-radius: 4px;
+  }
+  .row4 span img {
+    padding-right: 6px;
+  }
+}

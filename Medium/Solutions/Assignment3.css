@@ -55,7 +55,10 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-
+.container-fluid .row1 .col {
+  object-fit: contain;
+  object-position: center;
+}
 .container-fluid .heading .col {
   padding: 1.5vh 0;
   display: flex;
@@ -189,22 +192,28 @@ footer .container-fluid ul li {
     display: block;
   }
   .container-fluid .card-conatiner {
-    padding: 1rem;
+    /* padding: 1rem; */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
+    overflow: hidden;
+    /* scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; */
   }
   .container-fluid .card-conatiner .card {
     margin: 1rem 0.7rem;
-    width: 55vw;
+    width: 75vw;
+    height: 62vh;
     padding: 0;
+    flex-shrink: 0;
+    scroll-snap-align: start;
   }
   .container-fluid .card-conatiner .card .Chead {
     font-size: 15px;
   }
   .container-fluid .card-conatiner .card .Cdetails span {
-    font-size: 12px;
+    font-size: 17px;
     font-weight: 500;
   }
   .container-fluid .card-conatiner .card .Cdetails #cord {
@@ -216,7 +225,6 @@ footer .container-fluid ul li {
     padding-right: 10px;
   }
   .container-fluid .card-conatiner .card .Cbody ul {
-    margin-left: -20px;
     margin-top: 20px;
   }
   .container-fluid .card-conatiner .card .Cbody ul li {
