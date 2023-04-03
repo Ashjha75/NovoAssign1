@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Assignment3.css" />
+    <link rel="stylesheet" href="Assignment5.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+
+    <title>Assignment 4</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="logo">
+            <img src="../../assets/Logo-SV.svg" class="" alt="Logo" />
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How To Top Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Loction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex">
+              <button class="btn mx-1" id="btn1" type="submit">Login</button
+              ><button class="btn mx-1" id="btn2" type="submit">
+                Registration</button
+              ><button class="btn mx-1" id="btn3" type="submit">
+                Download
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col">
+          <img src="../../assets/help_us_banner.png" alt="" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col grnrow">Verification Locations  <img  src="../../assets/minus.png" id="img1" onclick="toogleBox()"></div>
+      </div>
+      <div class="Containers" id="CollapsedContaier">
+        <div class="row">
+          <div class="col">
+            <span class="shead">Prize Payment Centre</span
+            ><span>1st Floor. Sagicor Centre 28-48</span
+            ><span>Barbados Avenue, Kingston 5</span>
+            <span>1-876-454-6526</span>
+          </div>
+          <div class="col">
+            <span class="shead">Half Way Tree</span
+            ><span>15H Half Way Tree Road,</span
+            ><span>state Mall, Kingston 5</span><span>1-876-906-8719</span>
+          </div>
+          <div class="col">
+            <span class="shead">Portmore</span><span>Shop #6, 2nd Floor</span
+            ><span>McMaster's Centre</span
+            ><span>Lot 18 Portmore Town Centre </span
+            ><span>1-876-622-1426</span>
+          </div>
+          <div class="col">
+            <span class="shead">Spanish Town</span><span>37 Young Street,</span
+            ><span>Spanish Town</span><span>St. Catherine</span
+            ><span>1-876-618-9384</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <span class="shead">Savanna-La-Mar</span
+            ><span>Shop #16A, Hendon Mall</span><span>Savanna-La Mar,</span>
+            <span>Westmoreland</span>
+            <span>1-876-918-0233</span>
+          </div>
+          <div class="col">
+            <span class="shead">Montego Bay</span
+            ><span>25 St. James Street</span><span>Shop 40</span
+            ><span>1-876-622-7783</span>
+          </div>
+          <div class="col">
+            <span class="shead">Ocho Rios</span><span>Shop GF #5</span
+            ><span>Island Shopping Plaza</span><span>1-876-630-7985</span>
+          </div>
+          <div class="col">
+            <span class="shead">Lotto Superstore</span><span>Shop #12</span
+            ><span>Clock Tower Plaza</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col grnrow">
+          To Up Locations <img src="../../assets/minus.png" id="img2" onclick="toogleBox2()"></i>
+        </div>
+      </div>
+
+      <div class="Containers" id="CollapsedContaier2">
+        <div class="row Crow">
+          <div class="col">Kingston and St. Andrew</div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <span class="shead">Prize Payment Centre</span
+            ><span>1st Floor. Sagicor Centre 28-48</span
+            ><span>Barbados Avenue, Kingston 5</span>
+            <span>1-876-454-6526</span>
+          </div>
+          <div class="col">
+            <span class="shead">Half Way Tree</span
+            ><span>15H Half Way Tree Road,</span
+            ><span>state Mall, Kingston 5</span><span>1-876-906-8719</span>
+          </div>
+          <div class="col">
+            <span class="shead">Portmore</span><span>Shop #6, 2nd Floor</span
+            ><span>McMaster's Centre</span
+            ><span>Lot 18 Portmore Town Centre </span
+            ><span>1-876-622-1426</span>
+          </div>
+          <div class="col">
+            <span class="shead">Spanish Town</span><span>37 Young Street,</span
+            ><span>Spanish Town</span><span>St. Catherine</span
+            ><span>1-876-618-9384</span>
+          </div>
+        </div>
+        <div class="row Crow">
+          <div class="col">Kingston and St. Andrew</div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <span class="shead">Savanna-La-Mar</span
+            ><span>Shop #16A, Hendon Mall</span><span>Savanna-La Mar,</span>
+            <span>Westmoreland</span>
+            <span>1-876-918-0233</span>
+          </div>
+          <div class="col">
+            <span class="shead">Montego Bay</span
+            ><span>25 St. James Street</span><span>Shop 40</span
+            ><span>1-876-622-7783</span>
+          </div>
+          <div class="col">
+            <span class="shead">Ocho Rios</span><span>Shop GF #5</span
+            ><span>Island Shopping Plaza</span><span>1-876-630-7985</span>
+          </div>
+          <div class="col">
+            <span class="shead">Lotto Superstore</span><span>Shop #12</span
+            ><span>Clock Tower Plaza</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <img src="../../assets/Logo-SV.svg" class="my-3" alt="" />
+        </div>
+        <div class="row row-cols-1 row-cols-lg-3">
+          <div class="col">
+            <ul>
+              <li>How To Top Up</li>
+              <li>Location</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="col midcol">
+            <ul>
+              <li>&#169; 2020, Supreme Ventures Limited.</li>
+              <li>
+                Address: 4th Fl, R. Danny Williams Bldg 28 - 48 Barbados Ave,
+                Kgn 5
+              </li>
+              <li>
+                Contact Phone: 1 876 754-6526 Email: info@supremegames.com
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+              <li>All Rights Reserved</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col">
+            <img src="../../assets/facebook.svg" class="m-2" alt="" />
+            <img src="../../assets/instagram.svg" class="m-2" alt="" />
+            <img src="../../assets/twitter.svg" class="m-2" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="Assignmnet5.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

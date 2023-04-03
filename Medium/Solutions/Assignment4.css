@@ -1,0 +1,114 @@
+.mainContent .row {
+  background: #fff;
+  padding: 2rem;
+}
+.mainContent .row .col1 {
+  display: flex;
+  justify-content: end;
+  padding-right: 8rem;
+  position: relative;
+  width: 50vw;
+}
+.mainContent .row .col1 img {
+  position: absolute;
+  bottom: 0;
+  height: 60vh;
+}
+.mainContent .row .col .details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  color: #7d7d7d;
+}
+.mainContent .row .col .details #Contact {
+  color: #279c31;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.mainContent .row form {
+  background: #fff;
+}
+.mainContent .row form .inputGroup {
+  margin: 2.2rem 0 1.5rem 0;
+  width: 100%;
+  position: relative;
+}
+.mainContent .row form .inputGroup .note {
+  position: absolute;
+  right: 0;
+  font-size: 15px;
+}
+
+.mainContent .row form .inputGroup input,
+textarea {
+  font-size: 100%;
+  padding: 0.5rem;
+  outline: none;
+  border: 2px solid #bcbcbc;
+  background-color: transparent;
+  border-radius: 5px;
+  width: 70%;
+}
+.mainContent .row form #Lbtn {
+  background: #279c31;
+  color: #fff;
+  padding: 0.6rem 4rem;
+}
+textarea {
+  resize: none;
+}
+
+.mainContent .row form .inputGroup label {
+  transform: translateY(-50%) scale(0.9);
+  position: absolute;
+  left: 0;
+  font-size: 19px;
+  margin-left: 0.5rem;
+  color: #389140;
+  background: #fff;
+  border-color: #279c31;
+}
+
+@media only screen and (max-width: 900px) {
+  .mainContent .row .col1 {
+    display: none;
+  }
+  .mainContent .row .col .details {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: #7d7d7d;
+  }
+  .mainContent .row .col .details span {
+    margin: auto;
+  }
+  .mainContent .row .col .details #Contact {
+    color: #279c31;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .mainContent .row form {
+    background: #fff;
+  }
+  .mainContent .row form .inputGroup {
+    margin: 2.2rem 0 1.5rem 0;
+    width: 100%;
+    position: relative;
+  }
+  .mainContent .row form .inputGroup .note {
+    position: absolute;
+    right: 0;
+    font-size: 15px;
+  }
+  .mainContent .row form .inputGroup input,
+  textarea {
+    padding: 0.7rem;
+    width: 100%;
+  }
+  .mainContent .row form .btns {
+    display: flex;
+    justify-content: center;
+  }
+}

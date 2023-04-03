@@ -1,0 +1,84 @@
+.Containers {
+  width: 92vw;
+  height: fit-content;
+  border: 3px solid #34933c;
+  border-radius: 7px;
+  margin: auto auto;
+  overflow: hidden;
+  margin-top: 3rem;
+  background: #fff;
+}
+.grnrow {
+  color: #34933c;
+  font-size: 23px;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  line-height: 3.5vh;
+  position: relative;
+}
+.grnrow img {
+  position: absolute;
+  right: 7vw;
+  display: none;
+  height: 3.5vh;
+}
+.Containers .row {
+  height: 50%;
+}
+
+.Containers .row .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #535151;
+  border: 0.2px solid #b8b8b890;
+  border-top: none;
+  flex-direction: column;
+}
+
+.Containers .Crow {
+  height: 6vh;
+  background: #edf7ee;
+}
+
+.Containers .Crow .col {
+  color: #34933c;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.Containers .row .col .shead {
+  color: #34933c;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 900px) {
+  .Containers {
+    width: 98vw;
+    height: fit-content;
+    border: none;
+  }
+  .Containers .row {
+    display: block;
+  }
+  .Containers .row .col {
+    border: none;
+    margin-top: 1.5rem;
+  }
+
+  .Containers .Crow {
+    height: 6vh;
+    background: #edf7ee;
+  }
+  .grnrow img {
+    position: absolute;
+    right: 7vw;
+    height: 3.5vh;
+    display: block;
+  }
+  .ClpsContainers {
+    display: none;
+  }
+}
